@@ -26,7 +26,7 @@ module.exports = {
     try {
       const imoveis = await Imovel.findAll({
         include: {
-          model: User,
+          model: Users,
           as: 'locador',
           attributes: ['id', 'nome', 'email']
         }
